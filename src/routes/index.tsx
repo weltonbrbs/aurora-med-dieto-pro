@@ -1,24 +1,81 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { TopUrgencyBar } from "@/components/aurora/TopUrgencyBar";
+import { HeroSection } from "@/components/aurora/HeroSection";
+import { AudienceSection } from "@/components/aurora/AudienceSection";
+import { LearningSection } from "@/components/aurora/LearningSection";
+import { ModulesSection } from "@/components/aurora/ModulesSection";
+import { ProfessionalTestimonials } from "@/components/aurora/ProfessionalTestimonials";
+import { PatientTestimonials } from "@/components/aurora/PatientTestimonials";
+import { BonusSection } from "@/components/aurora/BonusSection";
+import { PricingSection } from "@/components/aurora/PricingSection";
+import { DeliverablesSection } from "@/components/aurora/DeliverablesSection";
+import { GuaranteeSection } from "@/components/aurora/GuaranteeSection";
+import { FAQSection } from "@/components/aurora/FAQSection";
+import { AboutAuroraMed } from "@/components/aurora/AboutAuroraMed";
+import { FinalCTA } from "@/components/aurora/FinalCTA";
+import { Footer } from "@/components/aurora/Footer";
+import { MobileStickyCTA } from "@/components/aurora/MobileStickyCTA";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "Dietoterapia Chinesa para Profissionais | aurora med";
+const description =
+  "Guia prático de Dietoterapia Chinesa: indique alimentos conforme o diagnóstico energético, aplique os Cinco Movimentos e potencialize os resultados dos seus pacientes.";
+
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "product" },
+      { property: "og:url", content: "/" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: "Dietoterapia Chinesa — aurora med",
+          brand: { "@type": "Brand", name: "aurora med" },
+          description,
+          offers: {
+            "@type": "Offer",
+            price: "47.90",
+            priceCurrency: "BRL",
+            availability: "https://schema.org/InStock",
+            url: "https://payt.site/mNCDOgJ",
+          },
+        }),
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="bg-white text-ink">
+      <TopUrgencyBar />
+      <main className="pb-24 lg:pb-0">
+        <HeroSection />
+        <AudienceSection />
+        <LearningSection />
+        <ModulesSection />
+        <ProfessionalTestimonials />
+        <PatientTestimonials />
+        <BonusSection />
+        <PricingSection />
+        <DeliverablesSection />
+        <GuaranteeSection />
+        <FAQSection />
+        <AboutAuroraMed />
+        <FinalCTA />
+      </main>
+      <Footer />
+      <MobileStickyCTA />
     </div>
   );
 }
