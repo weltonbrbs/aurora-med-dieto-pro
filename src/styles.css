@@ -157,3 +157,79 @@
     color: var(--color-foreground);
   }
 }
+
+:root {
+  --forest: oklch(0.3253 0.0588 155.65);
+  --forest-deep: oklch(0.2627 0.0438 157.13);
+  --forest-hover: oklch(0.4304 0.082 155.55);
+  --sage: oklch(0.6264 0.049 134.12);
+  --mint: oklch(0.9449 0.0119 145.48);
+  --cream: oklch(0.965 0.0114 84.58);
+  --gold: oklch(0.7401 0.0809 81.27);
+  --terracotta: oklch(0.6014 0.1127 38.91);
+  --ink: oklch(0.2557 0.0137 154.26);
+  --ink-soft: oklch(0.483 0.0161 145.32);
+
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.2557 0.0137 154.26);
+  --primary: oklch(0.3253 0.0588 155.65);
+  --primary-foreground: oklch(0.965 0.0114 84.58);
+  --secondary: oklch(0.9449 0.0119 145.48);
+  --secondary-foreground: oklch(0.3253 0.0588 155.65);
+  --muted: oklch(0.965 0.0114 84.58);
+  --muted-foreground: oklch(0.483 0.0161 145.32);
+  --accent: oklch(0.9449 0.0119 145.48);
+  --accent-foreground: oklch(0.3253 0.0588 155.65);
+  --border: oklch(0.9449 0.0119 145.48);
+  --ring: oklch(0.6264 0.049 134.12);
+  --radius: 0.75rem;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+  :focus-visible {
+    outline: 2px solid var(--sage);
+    outline-offset: 3px;
+  }
+}
+
+@utility shell {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1200px;
+  padding-inline: 1.25rem;
+}
+
+@utility section-y {
+  padding-block: 3.75rem;
+  @media (min-width: 768px) {
+    padding-block: 6.5rem;
+  }
+}
+
+@utility reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: aurora-fade-up 0.45s ease-out forwards;
+}
+
+@keyframes aurora-fade-up {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
