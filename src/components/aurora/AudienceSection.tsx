@@ -42,7 +42,7 @@ export function AudienceSection() {
         </ul>
 
         <div className="mt-10 flex justify-center">
-          <CtaButton className="max-w-[650px]">
+          <CtaButton className="max-w-[650px] pulse-3d">
             Quero acessar agora e tratar meus pacientes com Dietoterapia
             Chinesa
           </CtaButton>
