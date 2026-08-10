@@ -30,6 +30,7 @@
   --color-gold: var(--gold);
   --color-terracotta: var(--terracotta);
   --color-gold-deep: var(--gold-deep);
+  --color-strike: var(--strike);
   --color-element-wood: var(--element-wood);
   --color-element-fire: var(--element-fire);
   --color-element-earth: var(--element-earth);
@@ -179,6 +180,7 @@
   --element-metal: oklch(0.6206 0.0163 250.2);
   --element-water: oklch(0.4362 0.0946 250.8);
   --terracotta: oklch(0.6014 0.1127 38.91);
+  --strike: oklch(0.58 0.23 27.2);
   --ink: oklch(0.2557 0.0137 154.26);
   --ink-soft: oklch(0.483 0.0161 145.32);
 
@@ -262,5 +264,30 @@
     animation: none;
     opacity: 1;
     transform: none;
+  }
+}
+
+@utility pulse-3d {
+  animation: aurora-pulse-3d 2.2s ease-in-out infinite;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 0 -2px var(--forest-deep), 0 18px 26px -12px oklch(0.3253 0.0588 155.65 / 0.5);
+}
+
+@keyframes aurora-pulse-3d {
+  0%, 100% {
+    transform: translateY(0) translateZ(0);
+    filter: brightness(1);
+    box-shadow: 0 10px 0 -2px var(--forest-deep), 0 18px 26px -12px oklch(0.3253 0.0588 155.65 / 0.5);
+  }
+  50% {
+    transform: translateY(-6px);
+    filter: brightness(1.18);
+    box-shadow: 0 16px 0 -2px var(--forest-deep), 0 26px 34px -12px oklch(0.3253 0.0588 155.65 / 0.55);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-3d {
+    animation: none;
   }
 }
