@@ -75,7 +75,7 @@ export function PricingSection() {
             </p>
 
             <div className="mt-7">
-              <CtaButton full>
+              <CtaButton full variant="gold">
                 Eu quero meu acesso agora!
               </CtaButton>
             </div>
