@@ -172,6 +172,12 @@
   --mint: oklch(0.9449 0.0119 145.48);
   --cream: oklch(0.965 0.0114 84.58);
   --gold: oklch(0.7401 0.0809 81.27);
+  --gold-deep: oklch(0.6602 0.0947 76.5);
+  --element-wood: oklch(0.5401 0.1091 148.2);
+  --element-fire: oklch(0.5589 0.1741 27.5);
+  --element-earth: oklch(0.6602 0.0947 76.5);
+  --element-metal: oklch(0.6206 0.0163 250.2);
+  --element-water: oklch(0.4362 0.0946 250.8);
   --terracotta: oklch(0.6014 0.1127 38.91);
   --ink: oklch(0.2557 0.0137 154.26);
   --ink-soft: oklch(0.483 0.0161 145.32);
