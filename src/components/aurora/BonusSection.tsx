@@ -1,4 +1,6 @@
-import { Gift } from "lucide-react";
+import bonusCards from "@/assets/bonus-cards.jpg";
+import bonusRecipes from "@/assets/bonus-recipes.jpg";
+
 import { Eyebrow } from "./brand";
 
 const bonuses = [
@@ -6,47 +8,62 @@ const bonuses = [
     badge: "Bônus 1",
     title: "Cards de Consulta Rápida: Síndromes e Alimentos",
     text: "Cards em formato A6 com as principais síndromes da MTC e seus alimentos indicados e contraindicados.",
-    price: "R$ 67,00",
+    price: "Valor individual: R$ 67,00",
+    img: bonusCards,
+    alt: "Cards de consulta rápida",
   },
   {
     badge: "Bônus 2",
     title: "Guia de Receitas Terapêuticas da Medicina Chinesa",
     text: "Receitas práticas de sopas, caldos e chás para diferentes padrões energéticos.",
-    price: "R$ 47,00",
+    price: "Valor individual: R$ 47,00",
+    img: bonusRecipes,
+    alt: "Guia de receitas terapêuticas",
   },
 ];
 
 export function BonusSection() {
   return (
-    <section id="bonus" className="scroll-mt-16 bg-mint px-6 py-20">
-      <div className="mx-auto max-w-5xl">
-        <Eyebrow className="mb-3 text-center">Bônus exclusivos</Eyebrow>
-        <h2 className="mb-14 text-center font-serif text-3xl text-forest-deep sm:text-5xl">
-          Você ainda recebe estes presentes
-        </h2>
+    <section id="bonus" className="bg-cream">
+      <div className="mx-auto max-w-[1060px] px-5 py-16 md:px-6 md:py-20">
+        <div className="text-center">
+          <Eyebrow>Bônus exclusivos</Eyebrow>
 
-        <div className="grid gap-6 md:grid-cols-2">
-          {bonuses.map((b) => (
+          <h2 className="mt-3 text-3xl font-semibold leading-tight text-forest sm:text-[2.5rem]">
+            Você ainda recebe estes presentes
+          </h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 lg:grid-cols-2">
+          {bonuses.map((bonus) => (
             <article
-              key={b.badge}
-              className="relative overflow-hidden rounded-2xl border-2 border-gold bg-white p-7"
+              key={bonus.badge}
+              className="overflow-hidden border border-sage/25 bg-white"
             >
-              <div
-                className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gold/20"
-                aria-hidden="true"
+              <img
+                src={bonus.img}
+                alt={bonus.alt}
+                loading="lazy"
+                className="h-[260px] w-full object-cover"
               />
-              <div className="mb-4 flex items-center gap-2">
-                <Gift className="h-5 w-5 shrink-0 text-gold" aria-hidden="true" />
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">
-                  {b.badge}
+
+              <div className="p-6">
+                <span className="text-xs font-semibold uppercase tracking-[0.14em] text-gold">
+                  {bonus.badge}
                 </span>
+
+                <h3 className="mt-3 text-xl font-semibold leading-snug text-forest">
+                  {bonus.title}
+                </h3>
+
+                <p className="mt-3 text-sm leading-relaxed text-ink-soft sm:text-base">
+                  {bonus.text}
+                </p>
+
+                <p className="mt-4 text-sm font-semibold text-terracotta">
+                  {bonus.price}
+                </p>
               </div>
-              <h3 className="mb-2 font-serif text-2xl text-forest-deep">{b.title}</h3>
-              <p className="mb-4 text-ink-soft">{b.text}</p>
-              <p className="text-sm">
-                <span className="text-ink-soft">Valor individual: </span>
-                <span className="text-gold line-through">{b.price}</span>
-              </p>
             </article>
           ))}
         </div>
