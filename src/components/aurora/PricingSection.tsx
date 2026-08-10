@@ -1,54 +1,94 @@
-import { ShieldCheck, Sparkles } from "lucide-react";
-import { CtaButton } from "./brand";
+import { Lock } from "lucide-react";
+import { CtaButton, Eyebrow } from "./brand";
 
-const lines = [
-  { label: "E-book Dietoterapia Chinesa", value: "R$ 197,00" },
-  { label: "Bônus 1 — Cards de Consulta Rápida", value: "R$ 67,00" },
-  { label: "Bônus 2 — Guia de Receitas Terapêuticas", value: "R$ 47,00" },
+const items = [
+  {
+    label: "E-book Dietoterapia Chinesa",
+    value: "R$ 197,00",
+  },
+  {
+    label: "Cards de Consulta Rápida: Síndromes e Alimentos",
+    value: "R$ 67,00",
+  },
+  {
+    label: "Guia de Receitas Terapêuticas da Medicina Chinesa",
+    value: "R$ 47,00",
+  },
 ];
 
 export function PricingSection() {
   return (
-    <section id="oferta" className="bg-forest px-6 py-20">
-      <div className="mx-auto max-w-3xl text-center text-cream">
-        <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold px-4 py-1.5 text-xs uppercase tracking-[0.3em] text-gold">
-          <Sparkles className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
-          Últimas vagas com condição exclusiva
-        </p>
-        <h2 className="mb-10 font-serif text-4xl sm:text-5xl">
+    <section id="oferta" className="bg-forest-deep">
+      <div className="mx-auto max-w-[820px] px-5 py-16 text-center md:px-6 md:py-20">
+        <Eyebrow tone="gold">
+          Condição especial por tempo limitado
+        </Eyebrow>
+
+        <h2 className="mt-4 text-3xl font-semibold leading-tight text-white sm:text-[2.6rem]">
           Tudo isso por um único investimento
         </h2>
 
-        <div className="space-y-3 rounded-3xl border border-cream/10 bg-cream/5 p-8 text-left">
-          {lines.map((l) => (
-            <div
-              key={l.label}
-              className="flex items-center justify-between gap-4 border-b border-cream/10 py-3"
-            >
-              <span className="min-w-0 text-cream/85">{l.label}</span>
-              <span className="shrink-0 font-medium text-gold">{l.value}</span>
+        <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-white/70 sm:text-base">
+          Tenha acesso ao material completo e aos bônus exclusivos para aplicar
+          a Dietoterapia Chinesa na sua prática clínica.
+        </p>
+
+        <div className="mt-10 bg-cream px-6 py-8 sm:px-10 sm:py-10">
+          <div className="space-y-0">
+            {items.map((item) => (
+              <div
+                key={item.label}
+                className="flex items-start justify-between gap-5 border-b border-sage/25 py-4 text-left"
+              >
+                <span className="text-sm leading-relaxed text-ink sm:text-base">
+                  {item.label}
+                </span>
+
+                <span className="shrink-0 text-sm text-ink-soft sm:text-base">
+                  {item.value}
+                </span>
+              </div>
+            ))}
+
+            <div className="flex items-center justify-between pt-5 text-left">
+              <span className="font-semibold text-forest">
+                Valor total
+              </span>
+
+              <span className="text-lg font-semibold text-ink-soft line-through">
+                R$ 311,00
+              </span>
             </div>
-          ))}
-          <div className="flex items-center justify-between gap-4 pt-4">
-            <span className="font-semibold">Valor total</span>
-            <span className="font-serif text-2xl line-through opacity-60">R$ 311,00</span>
+          </div>
+
+          <div className="mt-8 border-t border-sage/25 pt-8 text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-soft">
+              Hoje por apenas
+            </p>
+
+            <div className="mt-2 text-[4rem] font-bold leading-none tracking-[-0.05em] text-forest sm:text-[5rem]">
+              R$ 47,90
+            </div>
+
+            <p className="mt-3 text-sm text-terracotta">
+              ou 12x de R$ 4,96
+            </p>
+
+            <div className="mt-7">
+              <CtaButton full>
+                Eu quero meu acesso agora!
+              </CtaButton>
+            </div>
+
+            <div className="mt-5 flex items-center justify-center gap-2 text-xs text-ink-soft">
+              <Lock className="h-3.5 w-3.5 text-sage" />
+
+              <span>
+                Compra 100% segura · Acesso imediato
+              </span>
+            </div>
           </div>
         </div>
-
-        <div className="mt-10 space-y-2">
-          <p className="text-cream/70">Hoje por apenas</p>
-          <p className="font-serif text-6xl text-gold sm:text-7xl">R$ 47,90</p>
-          <p className="text-cream/70">à vista ou 12x de R$ 4,96</p>
-        </div>
-
-        <div className="mt-10 flex justify-center">
-          <CtaButton variant="gold">Eu quero meu acesso agora!</CtaButton>
-        </div>
-
-        <p className="mt-6 inline-flex items-center justify-center gap-2 text-sm opacity-70">
-          <ShieldCheck className="h-4 w-4 shrink-0" aria-hidden="true" />
-          Compra 100% segura · Acesso imediato
-        </p>
       </div>
     </section>
   );
