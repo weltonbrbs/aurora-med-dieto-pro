@@ -1,39 +1,65 @@
-import { BookOpen, Sparkles, Leaf, Clock, ShieldCheck, Smartphone } from "lucide-react";
+import { Check } from "lucide-react";
+import materials from "@/assets/materials.jpg";
 
 const items = [
-  {
-    icon: BookOpen,
-    text: "E-book completo com tudo que você precisa para saber tratar seus pacientes com dietoterapia chinesa",
-  },
-  { icon: Sparkles, text: "Ferramentas incríveis para você baixar e usar nos seus atendimentos" },
-  { icon: Sparkles, text: "Cards de consulta rápida em PDF" },
-  { icon: Leaf, text: "Guia de receitas terapêuticas" },
-  { icon: Clock, text: "Acesso vitalício" },
-  { icon: ShieldCheck, text: "Atualizações futuras sem custo adicional" },
-  { icon: Smartphone, text: "Acesso pelo celular, tablet ou computador" },
+  "E-book completo com tudo que você precisa para saber tratar seus pacientes com Dietoterapia Chinesa",
+  "Ferramentas práticas para utilizar nos seus atendimentos",
+  "Cards de consulta rápida em PDF",
+  "Guia de receitas terapêuticas da Medicina Chinesa",
+  "Acesso vitalício ao material",
+  "Atualizações futuras sem custo adicional",
+  "Acesso pelo celular, tablet ou computador",
 ];
 
 export function DeliverablesSection() {
   return (
-    <section className="px-6 py-20">
-      <div className="mx-auto max-w-4xl">
-        <h2 className="mb-12 text-center font-serif text-3xl text-forest-deep sm:text-4xl">
-          O que você recebe imediatamente
-        </h2>
+    <section className="bg-white">
+      <div className="mx-auto max-w-[1060px] px-5 py-16 md:px-6 md:py-20">
+        
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-semibold leading-tight text-forest sm:text-[2.5rem]">
+            O que você recebe imediatamente
+          </h2>
 
-        <div className="grid gap-4 sm:grid-cols-2">
-          {items.map(({ icon: Icon, text }) => (
-            <div
-              key={text}
-              className="flex items-center gap-4 rounded-xl border border-mint bg-white p-5"
-            >
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gold">
-                <Icon className="h-5 w-5 text-forest-deep" aria-hidden="true" />
-              </div>
-              <span className="min-w-0 text-ink">{text}</span>
-            </div>
-          ))}
+          <p className="mt-3 text-base text-ink-soft">
+            Tudo organizado para você começar a aplicar na prática.
+          </p>
         </div>
+
+
+        <div className="mt-10 grid items-center gap-10 lg:grid-cols-[1fr_.85fr] lg:gap-14">
+
+          <ul className="space-y-5">
+            {items.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-3"
+              >
+                <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint text-forest">
+                  <Check className="h-3.5 w-3.5" />
+                </span>
+
+                <p className="text-sm leading-relaxed text-ink sm:text-base">
+                  {item}
+                </p>
+              </li>
+            ))}
+          </ul>
+
+
+          <div className="flex justify-center">
+            <img
+              src={materials}
+              alt="Materiais aurora med"
+              loading="lazy"
+              width={900}
+              height={900}
+              className="w-full max-w-[430px] object-contain"
+            />
+          </div>
+
+        </div>
+
       </div>
     </section>
   );
