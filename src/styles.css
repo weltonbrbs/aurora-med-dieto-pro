@@ -186,13 +186,32 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    background: white;
+    color: var(--ink);
   }
-  h1, h2, h3, .font-serif {
+
+  .font-serif {
     font-family: var(--font-serif);
   }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-sans);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--sage);
+    outline-offset: 3px;
+  }
+}
   :focus-visible {
     outline: 2px solid var(--sage);
     outline-offset: 3px;
