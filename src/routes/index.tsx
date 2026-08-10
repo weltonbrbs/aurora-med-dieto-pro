@@ -5,7 +5,7 @@ import { AudienceSection } from "@/components/aurora/AudienceSection";
 import { LearningSection } from "@/components/aurora/LearningSection";
 import { ModulesSection } from "@/components/aurora/ModulesSection";
 import { ProfessionalTestimonials } from "@/components/aurora/ProfessionalTestimonials";
-import { PatientTestimonials } from "@/components/aurora/PatientTestimonials";
+
 import { BonusSection } from "@/components/aurora/BonusSection";
 import { PricingSection } from "@/components/aurora/PricingSection";
 import { DeliverablesSection } from "@/components/aurora/DeliverablesSection";
@@ -65,7 +65,7 @@ function Index() {
         <LearningSection />
         <ModulesSection />
         <ProfessionalTestimonials />
-        <PatientTestimonials />
+        
         <BonusSection />
         <PricingSection />
         <DeliverablesSection />
