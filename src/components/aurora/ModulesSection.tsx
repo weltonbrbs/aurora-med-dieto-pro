@@ -23,26 +23,32 @@ const modules = [
 
 export function ModulesSection() {
   return (
-    <section className="bg-mint px-6 py-20">
-      <div className="mx-auto max-w-5xl">
-        <h2 className="mb-14 text-center font-serif text-3xl text-forest-deep sm:text-5xl">
+    <section className="bg-cream">
+      <div className="mx-auto max-w-[920px] px-5 py-16 md:px-6 md:py-20">
+        <h2 className="text-center text-3xl font-semibold leading-tight text-forest sm:text-[2.5rem]">
           Conteúdo por dentro do guia
         </h2>
 
-        <div className="space-y-4">
-          {modules.map((m, i) => (
-            <div
-              key={m.title}
-              className="flex gap-5 rounded-2xl border border-mint bg-white p-6"
+        <div className="mt-10 border-t border-sage/30">
+          {modules.map((module, index) => (
+            <article
+              key={module.title}
+              className="grid grid-cols-[50px_1fr] gap-5 border-b border-sage/30 py-6 sm:grid-cols-[70px_1fr]"
             >
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-forest font-serif text-xl text-cream">
-                {i + 1}
+              <span className="text-4xl font-medium leading-none text-forest/80">
+                {index + 1}
+              </span>
+
+              <div>
+                <h3 className="text-xl font-semibold leading-snug text-forest sm:text-[1.4rem]">
+                  {module.title}
+                </h3>
+
+                <p className="mt-2 text-sm leading-relaxed text-ink-soft sm:text-base">
+                  {module.text}
+                </p>
               </div>
-              <div className="min-w-0">
-                <h3 className="mb-1 font-serif text-xl text-forest-deep">{m.title}</h3>
-                <p className="text-ink-soft">{m.text}</p>
-              </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
