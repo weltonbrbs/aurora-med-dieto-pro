@@ -29,6 +29,12 @@
   --color-cream: var(--cream);
   --color-gold: var(--gold);
   --color-terracotta: var(--terracotta);
+  --color-gold-deep: var(--gold-deep);
+  --color-element-wood: var(--element-wood);
+  --color-element-fire: var(--element-fire);
+  --color-element-earth: var(--element-earth);
+  --color-element-metal: var(--element-metal);
+  --color-element-water: var(--element-water);
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
   --shadow-soft: 0 1px 2px oklch(0.3253 0.0588 155.65 / 0.06), 0 8px 24px oklch(0.3253 0.0588 155.65 / 0.06);
