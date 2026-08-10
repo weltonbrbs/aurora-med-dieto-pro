@@ -2,13 +2,13 @@ import { CHECKOUT_URL } from "./brand";
 
 export function MobileStickyCTA() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-mint bg-white shadow-[0_-6px_20px_rgba(23,61,39,0.08)] lg:hidden">
-      <div className="flex items-center px-4 py-3">
+    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-mint bg-white lg:hidden">
+      <div className="px-4 py-3">
         <a
           href={CHECKOUT_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full rounded-xl bg-forest px-5 py-3.5 text-center text-sm font-semibold text-cream transition-colors hover:bg-forest-hover"
+          className="block w-full rounded-full bg-gold px-5 py-3.5 text-center text-sm font-semibold text-forest-deep transition-colors hover:bg-gold/90"
         >
           Eu quero meu acesso agora!
         </a>
