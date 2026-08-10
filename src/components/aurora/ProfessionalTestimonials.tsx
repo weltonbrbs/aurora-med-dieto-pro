@@ -1,4 +1,3 @@
-import { Star } from "lucide-react";
 import { Eyebrow } from "./brand";
 
 const testimonials = [
@@ -24,40 +23,41 @@ const testimonials = [
 
 export function ProfessionalTestimonials() {
   return (
-    <section className="bg-mint/40 px-6 pb-10 pt-20">
-      <div className="mx-auto max-w-6xl">
-        <Eyebrow className="mb-3 text-center">Depoimentos reais</Eyebrow>
-        <h2 className="mb-4 text-center font-serif text-3xl text-forest-deep sm:text-5xl">
-          O que dizem os profissionais que já aplicam
-        </h2>
-        <p className="mx-auto mb-14 max-w-2xl text-center text-ink-soft">
-          Centenas de profissionais da saúde já transformaram seus atendimentos com a Dietoterapia
-          Chinesa.
-        </p>
+    <section className="bg-white">
+      <div className="mx-auto max-w-[1060px] px-5 py-16 md:px-6 md:py-20">
+        <div className="mx-auto max-w-2xl text-center">
+          <Eyebrow>Depoimentos reais</Eyebrow>
 
-        <div className="grid gap-6 md:grid-cols-3">
-          {testimonials.map((t) => (
+          <h2 className="mt-3 text-3xl font-semibold leading-tight text-forest sm:text-[2.5rem]">
+            O que dizem os profissionais que já aplicam
+          </h2>
+
+          <p className="mt-3 text-base text-ink-soft">
+            Centenas de profissionais da saúde já transformaram seus
+            atendimentos com a Dietoterapia Chinesa.
+          </p>
+        </div>
+
+        <div className="mt-10 grid gap-5 md:grid-cols-3">
+          {testimonials.map((testimonial) => (
             <figure
-              key={t.name}
-              className="relative flex flex-col gap-4 rounded-2xl border border-mint bg-white p-7 shadow-sm"
+              key={testimonial.name}
+              className="border border-sage/25 bg-cream p-6"
             >
-              <div
-                className="absolute -top-3 left-6 font-serif text-5xl leading-none text-gold"
-                aria-hidden="true"
-              >
-                “
-              </div>
-              <div className="mt-2 flex gap-1" aria-hidden="true">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-gold text-gold" />
-                ))}
-              </div>
-              <blockquote className="font-serif text-lg italic leading-relaxed text-ink/85">
-                {t.quote}
+              <span className="text-5xl leading-none text-sage">“</span>
+
+              <blockquote className="mt-2 text-sm leading-[1.7] text-ink sm:text-base">
+                {testimonial.quote}
               </blockquote>
-              <figcaption className="mt-auto border-t border-mint pt-4">
-                <p className="font-semibold text-forest-deep">{t.name}</p>
-                <p className="text-sm text-ink-soft">{t.role}</p>
+
+              <figcaption className="mt-5 border-t border-sage/20 pt-4">
+                <strong className="block text-base text-forest">
+                  {testimonial.name}
+                </strong>
+
+                <span className="mt-1 block text-xs text-ink-soft">
+                  {testimonial.role}
+                </span>
               </figcaption>
             </figure>
           ))}
