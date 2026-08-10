@@ -17,7 +17,7 @@ export function FinalCTA() {
 
 
         <div className="mt-7 flex justify-center">
-          <CtaButton className="bg-white text-forest hover:bg-cream">
+          <CtaButton variant="gold">
             Eu quero meu acesso agora!
           </CtaButton>
         </div>

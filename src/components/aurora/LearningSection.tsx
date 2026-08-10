@@ -3,22 +3,27 @@ import { Eyebrow } from "./brand";
 const movements = [
   {
     name: "Madeira",
+    color: "text-element-wood",
     path: "M16 28V8m0 6c0-3.4 2.4-6 6.5-6.6C22 11.2 19.8 13.6 16 14Zm0 6c0-3-2.2-5.4-5.8-6 .4 3.4 2.4 5.6 5.8 6Z",
   },
   {
     name: "Fogo",
+    color: "text-element-fire",
     path: "M16 5c5 5.5 7 8.4 7 12a7 7 0 1 1-14 0c0-2.4 1.2-4.6 3.5-7 .3 2 1.2 3.2 2.4 3.6C15.3 11 15.5 8 16 5Z",
   },
   {
     name: "Terra",
+    color: "text-element-earth",
     path: "M5 22h22M8 22c1.6-5.6 4.4-8.4 8-8.4s6.4 2.8 8 8.4M16 8v3",
   },
   {
     name: "Metal",
+    color: "text-element-metal",
     path: "M16 6a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 5.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z",
   },
   {
     name: "Água",
+    color: "text-element-water",
     path: "M4 13c3-2.6 5-2.6 8 0s5 2.6 8 0 5-2.6 8 0M4 21c3-2.6 5-2.6 8 0s5 2.6 8 0 5-2.6 8 0",
   },
 ];
@@ -61,7 +66,7 @@ export function LearningSection() {
                 strokeWidth="1.2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="h-10 w-10 text-sage"
+                className={`h-10 w-10 ${movement.color}`}
                 aria-hidden="true"
               >
                 <path d={movement.path} />

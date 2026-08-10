@@ -68,17 +68,24 @@ export function CtaButton({
   children,
   className = "",
   full = false,
+  variant = "forest",
 }: {
   children: React.ReactNode;
   className?: string;
   full?: boolean;
+  variant?: "forest" | "gold";
 }) {
+  const tone =
+    variant === "gold"
+      ? "bg-gold text-forest-deep hover:bg-gold-deep hover:-translate-y-0.5 hover:shadow-[0_12px_28px_-12px_var(--gold-deep)] hover:scale-[1.02]"
+      : "bg-forest text-white hover:bg-forest-hover";
+
   return (
     <a
       href={CHECKOUT_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-flex min-h-[52px] items-center justify-center rounded-lg bg-forest px-7 py-3.5 text-center text-sm font-semibold leading-snug text-white transition-colors duration-150 hover:bg-forest-hover sm:text-base ${
+      className={`inline-flex min-h-[52px] items-center justify-center rounded-lg px-7 py-3.5 text-center text-sm font-semibold leading-snug transition-all duration-200 ease-out sm:text-base ${tone} ${
         full ? "w-full" : ""
       } ${className}`}
     >
