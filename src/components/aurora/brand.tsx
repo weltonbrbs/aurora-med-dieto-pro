@@ -1,8 +1,10 @@
-import { ArrowRight } from "lucide-react";
-
 export const CHECKOUT_URL = "https://payt.site/mNCDOgJ";
 
-export function LeafMark({ className = "h-7 w-7" }: { className?: string }) {
+export function LeafMark({
+  className = "h-7 w-7",
+}: {
+  className?: string;
+}) {
   return (
     <svg
       viewBox="0 0 32 32"
@@ -25,22 +27,17 @@ export function LeafMark({ className = "h-7 w-7" }: { className?: string }) {
 
 export function Logo({
   tone = "forest",
-  size = "md",
   className = "",
 }: {
   tone?: "forest" | "cream";
-  size?: "md" | "lg";
   className?: string;
 }) {
-  const color = tone === "cream" ? "text-cream" : "text-forest-deep";
+  const color = tone === "cream" ? "text-cream" : "text-forest";
+
   return (
-    <div className={`inline-flex items-center gap-2.5 ${color} ${className}`}>
-      <LeafMark className={size === "lg" ? "h-12 w-12 shrink-0" : "h-9 w-9 shrink-0"} />
-      <span
-        className={`font-serif leading-none tracking-tight ${
-          size === "lg" ? "text-4xl" : "text-3xl"
-        }`}
-      >
+    <div className={`flex items-center gap-2 ${color} ${className}`}>
+      <LeafMark className="h-7 w-7 shrink-0" />
+      <span className="font-serif text-[1.45rem] leading-none">
         aurora med
       </span>
     </div>
@@ -49,17 +46,17 @@ export function Logo({
 
 export function Eyebrow({
   children,
-  tone = "muted",
+  tone = "sage",
   className = "",
 }: {
   children: React.ReactNode;
-  tone?: "muted" | "gold";
+  tone?: "sage" | "gold";
   className?: string;
 }) {
   return (
     <p
-      className={`text-xs uppercase tracking-[0.3em] ${
-        tone === "gold" ? "text-gold" : "text-ink-soft"
+      className={`text-[0.72rem] font-semibold uppercase tracking-[0.18em] ${
+        tone === "gold" ? "text-gold" : "text-sage"
       } ${className}`}
     >
       {children}
@@ -69,26 +66,31 @@ export function Eyebrow({
 
 export function CtaButton({
   children,
-  variant = "forest",
   className = "",
+  full = false,
 }: {
   children: React.ReactNode;
-  variant?: "forest" | "gold";
   className?: string;
+  full?: boolean;
 }) {
-  const tone =
-    variant === "gold"
-      ? "bg-gold text-forest-deep hover:bg-gold/90"
-      : "bg-forest text-cream hover:bg-forest-hover";
   return (
     <a
       href={CHECKOUT_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-semibold transition-colors sm:text-lg ${tone} ${className}`}
+      className={`inline-flex min-h-[52px] items-center justify-center rounded-lg bg-forest px-7 py-3.5 text-center text-sm font-semibold leading-snug text-white transition-colors duration-150 hover:bg-forest-hover sm:text-base ${
+        full ? "w-full" : ""
+      } ${className}`}
     >
-      <span>{children}</span>
-      <ArrowRight className="h-5 w-5 shrink-0" aria-hidden="true" />
+      {children}
     </a>
   );
+}
+
+export function GoldRule({
+  className = "",
+}: {
+  className?: string;
+}) {
+  return <span className={`block h-px w-16 bg-gold/70 ${className}`} />;
 }
