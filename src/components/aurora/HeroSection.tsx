@@ -35,7 +35,7 @@ export function HeroSection() {
           </p>
 
           <div className="mt-7">
-            <CtaButton className="w-full sm:w-auto">
+            <CtaButton variant="gold" className="w-full sm:w-auto">
               Quero ter acesso agora
             </CtaButton>
           </div>
