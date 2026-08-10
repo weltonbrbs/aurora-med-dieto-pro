@@ -221,14 +221,19 @@
 @utility shell {
   margin-inline: auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1120px;
   padding-inline: 1.25rem;
+
+  @media (min-width: 768px) {
+    padding-inline: 1.5rem;
+  }
 }
 
 @utility section-y {
-  padding-block: 3.75rem;
+  padding-block: 4rem;
+
   @media (min-width: 768px) {
-    padding-block: 6.5rem;
+    padding-block: 5rem;
   }
 }
 
