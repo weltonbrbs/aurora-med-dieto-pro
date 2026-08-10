@@ -1,5 +1,5 @@
-import bonusCards from "@/assets/bonus-cards.jpg";
-import bonusRecipes from "@/assets/bonus-recipes.jpg";
+import bonusCardsAsset from "@/assets/bonus-cards-mockup.png.asset.json";
+import bonusRecipesAsset from "@/assets/bonus-recipes-mockup.png.asset.json";
 
 import { Eyebrow } from "./brand";
 
@@ -9,7 +9,7 @@ const bonuses = [
     title: "Cards de Consulta Rápida: Síndromes e Alimentos",
     text: "Cards em formato A6 com as principais síndromes da MTC e seus alimentos indicados e contraindicados.",
     price: "Valor individual: R$ 67,00",
-    img: bonusCards,
+    img: bonusCardsAsset.url,
     alt: "Cards de consulta rápida",
   },
   {
@@ -17,7 +17,7 @@ const bonuses = [
     title: "Guia de Receitas Terapêuticas da Medicina Chinesa",
     text: "Receitas práticas de sopas, caldos e chás para diferentes padrões energéticos.",
     price: "Valor individual: R$ 47,00",
-    img: bonusRecipes,
+    img: bonusRecipesAsset.url,
     alt: "Guia de receitas terapêuticas",
   },
 ];

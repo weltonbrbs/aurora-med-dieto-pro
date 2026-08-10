@@ -4,7 +4,7 @@ import {
   MonitorSmartphone,
 } from "lucide-react";
 
-import heroMockup from "@/assets/hero-mockup.jpg";
+import heroMockupAsset from "@/assets/capa-mockup.png.asset.json";
 import { CtaButton, Eyebrow, Logo } from "./brand";
 
 const micro = [
@@ -55,7 +55,7 @@ export function HeroSection() {
 
         <div className="flex justify-center lg:justify-end">
           <img
-            src={heroMockup}
+            src={heroMockupAsset.url}
             alt="E-book Dietoterapia Chinesa"
             width={1200}
             height={1200}
