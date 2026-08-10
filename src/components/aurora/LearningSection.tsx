@@ -66,7 +66,7 @@ export function LearningSection() {
                 strokeWidth="1.2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="h-10 w-10 text-sage"
+                className={`h-10 w-10 ${movement.color}`}
                 aria-hidden="true"
               >
                 <path d={movement.path} />
