@@ -4,20 +4,20 @@ const testimonials = [
   {
     quote:
       "Um material extremamente didático e aplicável na prática clínica. Passei a orientar meus pacientes com muito mais segurança.",
-    name: "Dra. Mariana Alves",
-    role: "Acupunturista · SP",
+    name: "Dra. Juliana Ferraz",
+    role: "Acupunturista · MG",
   },
   {
     quote:
       "Finalmente consegui entender como indicar alimentos conforme as síndromes da Medicina Chinesa. Mudou minha prática.",
-    name: "Carolina Mendes",
-    role: "Nutricionista · RJ",
+    name: "Beatriz Nogueira",
+    role: "Nutricionista · SC",
   },
   {
     quote:
       "Conteúdo direto ao ponto e com alto valor clínico. Recomendo para todo profissional integrativo.",
-    name: "Dr. Rafael Tanaka",
-    role: "Fisioterapeuta · PR",
+    name: "Dr. Eduardo Salgado",
+    role: "Fisioterapeuta · BA",
   },
 ];
 
