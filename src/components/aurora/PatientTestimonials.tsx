@@ -52,7 +52,7 @@ export function PatientTestimonials() {
         </ul>
 
         <div className="mt-9 flex justify-center">
-          <CtaButton className="pulse-3d">
+          <CtaButton className="float-pulse">
             Quero tratar meus pacientes com a Dietoterapia Chinesa
           </CtaButton>
         </div>

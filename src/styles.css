@@ -267,27 +267,23 @@
   }
 }
 
-@utility pulse-3d {
-  animation: aurora-pulse-3d 2.2s ease-in-out infinite;
-  transform-style: preserve-3d;
-  box-shadow: 0 10px 0 -2px var(--forest-deep), 0 18px 26px -12px oklch(0.3253 0.0588 155.65 / 0.5);
+@utility float-pulse {
+  animation: aurora-float-pulse 2.2s ease-in-out infinite;
 }
 
-@keyframes aurora-pulse-3d {
+@keyframes aurora-float-pulse {
   0%, 100% {
-    transform: translateY(0) translateZ(0);
+    transform: translateY(0);
     filter: brightness(1);
-    box-shadow: 0 10px 0 -2px var(--forest-deep), 0 18px 26px -12px oklch(0.3253 0.0588 155.65 / 0.5);
   }
   50% {
     transform: translateY(-6px);
-    filter: brightness(1.18);
-    box-shadow: 0 16px 0 -2px var(--forest-deep), 0 26px 34px -12px oklch(0.3253 0.0588 155.65 / 0.55);
+    filter: brightness(1.12);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .pulse-3d {
+  .float-pulse {
     animation: none;
   }
 }
