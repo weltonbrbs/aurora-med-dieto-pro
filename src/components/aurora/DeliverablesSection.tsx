@@ -1,47 +1,38 @@
-import { Check } from "lucide-react";
-import materials from "@/assets/materials.jpg";
+import { BookOpen, Sparkles, Leaf, Clock, ShieldCheck, Smartphone } from "lucide-react";
 
 const items = [
-  "E-book completo com tudo que você precisa para saber tratar seus pacientes com dietoterapia chinesa",
-  "Ferramentas incríveis para você baixar e usar nos seus atendimentos",
-  "Cards de consulta rápida em PDF",
-  "Guia de receitas terapêuticas",
-  "Acesso vitalício",
-  "Atualizações futuras sem custo adicional",
-  "Acesso pelo celular, tablet ou computador",
+  {
+    icon: BookOpen,
+    text: "E-book completo com tudo que você precisa para saber tratar seus pacientes com dietoterapia chinesa",
+  },
+  { icon: Sparkles, text: "Ferramentas incríveis para você baixar e usar nos seus atendimentos" },
+  { icon: Sparkles, text: "Cards de consulta rápida em PDF" },
+  { icon: Leaf, text: "Guia de receitas terapêuticas" },
+  { icon: Clock, text: "Acesso vitalício" },
+  { icon: ShieldCheck, text: "Atualizações futuras sem custo adicional" },
+  { icon: Smartphone, text: "Acesso pelo celular, tablet ou computador" },
 ];
 
 export function DeliverablesSection() {
   return (
-    <section className="bg-white">
-      <div className="shell section-y">
-        <h2 className="mx-auto max-w-2xl text-center font-serif text-3xl leading-tight text-forest sm:text-4xl lg:text-[2.75rem]">
+    <section className="px-6 py-20">
+      <div className="mx-auto max-w-4xl">
+        <h2 className="mb-12 text-center font-serif text-3xl text-forest-deep sm:text-4xl">
           O que você recebe imediatamente
         </h2>
 
-        <div className="mt-12 grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-          <ul className="grid gap-4">
-            {items.map((item) => (
-              <li key={item} className="flex items-start gap-4">
-                <span
-                  className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-sage/20 text-forest"
-                  aria-hidden="true"
-                >
-                  <Check className="h-4 w-4" />
-                </span>
-                <p className="min-w-0 text-sm leading-relaxed text-ink sm:text-base">{item}</p>
-              </li>
-            ))}
-          </ul>
-
-          <img
-            src={materials}
-            alt="Composição com os materiais da aurora med: e-book, cards e guia de receitas"
-            loading="lazy"
-            width={1200}
-            height={912}
-            className="w-full rounded-3xl border border-mint"
-          />
+        <div className="grid gap-4 sm:grid-cols-2">
+          {items.map(({ icon: Icon, text }) => (
+            <div
+              key={text}
+              className="flex items-center gap-4 rounded-xl border border-mint bg-white p-5"
+            >
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gold">
+                <Icon className="h-5 w-5 text-forest-deep" aria-hidden="true" />
+              </div>
+              <span className="min-w-0 text-ink">{text}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>

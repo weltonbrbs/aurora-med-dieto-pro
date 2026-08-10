@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Minus, Plus } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
@@ -37,20 +37,20 @@ const faqs = [
 ];
 
 export function FAQSection() {
-  const [open, setOpen] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="bg-white">
-      <div className="shell section-y">
-        <h2 className="mx-auto max-w-2xl text-center font-serif text-3xl leading-tight text-forest sm:text-4xl lg:text-[2.75rem]">
+    <section className="px-6 py-20">
+      <div className="mx-auto max-w-3xl">
+        <h2 className="mb-12 text-center font-serif text-3xl text-forest-deep sm:text-4xl">
           Perguntas frequentes
         </h2>
 
-        <div className="mx-auto mt-12 max-w-3xl">
+        <div className="space-y-3">
           {faqs.map((f, i) => {
             const isOpen = open === i;
             return (
-              <div key={f.q} className="border-b border-sage/30">
+              <div key={f.q} className="overflow-hidden rounded-xl border border-mint bg-white">
                 <h3>
                   <button
                     type="button"
@@ -58,14 +58,15 @@ export function FAQSection() {
                     aria-expanded={isOpen}
                     aria-controls={`faq-panel-${i}`}
                     id={`faq-button-${i}`}
-                    className="flex w-full items-center justify-between gap-4 py-5 text-left"
+                    className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
                   >
-                    <span className="min-w-0 text-sm font-medium text-forest sm:text-base">
-                      {f.q}
-                    </span>
-                    <span className="shrink-0 text-sage" aria-hidden="true">
-                      {isOpen ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
-                    </span>
+                    <span className="min-w-0 font-serif text-lg text-forest-deep">{f.q}</span>
+                    <ChevronDown
+                      className={`h-5 w-5 shrink-0 text-gold transition-transform duration-200 ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                      aria-hidden="true"
+                    />
                   </button>
                 </h3>
                 <div
@@ -73,11 +74,9 @@ export function FAQSection() {
                   role="region"
                   aria-labelledby={`faq-button-${i}`}
                   hidden={!isOpen}
-                  className="grid overflow-hidden transition-all duration-200"
+                  className="px-6 pb-5"
                 >
-                  <p className="pb-5 pr-8 text-sm leading-relaxed text-ink-soft sm:text-base">
-                    {f.a}
-                  </p>
+                  <p className="leading-relaxed text-ink-soft">{f.a}</p>
                 </div>
               </div>
             );
