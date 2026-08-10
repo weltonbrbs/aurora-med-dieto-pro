@@ -2,18 +2,16 @@ import { CtaButton } from "./brand";
 
 export function FinalCTA() {
   return (
-    <section className="bg-forest">
-      <div className="shell section-y text-center">
-        <h2 className="mx-auto max-w-3xl font-serif text-3xl leading-tight text-cream sm:text-4xl lg:text-[3rem]">
+    <section className="px-6 py-20">
+      <div className="mx-auto max-w-3xl text-center">
+        <h2 className="mb-6 font-serif text-4xl text-forest-deep sm:text-5xl">
           Comece hoje a usar a Dietoterapia Chinesa na sua clínica
         </h2>
-        <p className="mt-5 text-base text-cream/75">
+        <p className="mb-10 text-lg text-ink-soft">
           Acesso imediato. Garantia de 7 dias. Sem riscos.
         </p>
-        <div className="mt-9 flex justify-center">
-          <CtaButton className="border border-gold/40 bg-cream text-forest hover:bg-white">
-            Eu quero meu acesso agora!
-          </CtaButton>
+        <div className="flex justify-center">
+          <CtaButton variant="gold">Eu quero meu acesso agora!</CtaButton>
         </div>
       </div>
     </section>

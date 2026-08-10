@@ -23,32 +23,26 @@ const modules = [
 
 export function ModulesSection() {
   return (
-    <section className="bg-cream">
-      <div className="shell section-y">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-serif text-3xl leading-tight text-forest sm:text-4xl lg:text-[2.75rem]">
-            Conteúdo por dentro do guia
-          </h2>
-          <p className="mt-4 text-base text-ink-soft">
-            Cinco blocos construídos para levar você do fundamento à conduta aplicada no
-            atendimento.
-          </p>
-        </div>
+    <section className="bg-mint px-6 py-20">
+      <div className="mx-auto max-w-5xl">
+        <h2 className="mb-14 text-center font-serif text-3xl text-forest-deep sm:text-5xl">
+          Conteúdo por dentro do guia
+        </h2>
 
-        <div className="mx-auto mt-12 grid max-w-4xl gap-4">
+        <div className="space-y-4">
           {modules.map((m, i) => (
-            <article
+            <div
               key={m.title}
-              className="grid grid-cols-[auto_minmax(0,1fr)] items-start gap-5 rounded-2xl border border-mint bg-white p-6 transition-all duration-200 hover:-translate-y-[3px] hover:shadow-soft sm:gap-7 sm:p-8"
+              className="flex gap-5 rounded-2xl border border-mint bg-white p-6"
             >
-              <span className="font-serif text-4xl leading-none text-forest sm:text-5xl">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-forest font-serif text-xl text-cream">
                 {i + 1}
-              </span>
-              <div className="min-w-0">
-                <h3 className="font-serif text-xl text-forest sm:text-2xl">{m.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-soft sm:text-base">{m.text}</p>
               </div>
-            </article>
+              <div className="min-w-0">
+                <h3 className="mb-1 font-serif text-xl text-forest-deep">{m.title}</h3>
+                <p className="text-ink-soft">{m.text}</p>
+              </div>
+            </div>
           ))}
         </div>
       </div>
