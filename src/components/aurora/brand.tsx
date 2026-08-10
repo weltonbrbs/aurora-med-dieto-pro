@@ -77,7 +77,7 @@ export function CtaButton({
 }) {
   const tone =
     variant === "gold"
-      ? "bg-gold text-forest-deep hover:bg-gold-deep hover:-translate-y-0.5 hover:shadow-[0_12px_28px_-12px_var(--gold-deep)] hover:scale-[1.02]"
+      ? "bg-gold text-forest-deep hover:bg-gold-deep hover:-translate-y-1 hover:shadow-[0_16px_32px_-10px_rgba(197,166,111,0.55)] hover:scale-[1.03]"
       : "bg-forest text-white hover:bg-forest-hover";
 
   return (
