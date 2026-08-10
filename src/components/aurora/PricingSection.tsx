@@ -55,7 +55,7 @@ export function PricingSection() {
                 Valor total
               </span>
 
-              <span className="text-lg font-semibold text-ink-soft line-through decoration-strike decoration-2">
+              <span className="text-lg font-semibold text-ink-soft line-through">
                 R$ 311,00
               </span>
             </div>
