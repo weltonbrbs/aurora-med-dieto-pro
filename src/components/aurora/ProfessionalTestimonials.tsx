@@ -9,7 +9,7 @@ const testimonials = [
   },
   {
     quote:
-      "Finalmente consegui entender como indicar alimentos conforme as síndromes da Medicina Chinesa. Mudou minha prática.",
+      "Com o que aprendi com este guia consegui me diferenciar MUITO da concorrência. Os outros nutricionistas da minha região nem imaginam como aprendi tudo o que aplico em minhas consultas.",
     name: "Beatriz Nogueira",
     role: "Nutricionista · SC",
   },
