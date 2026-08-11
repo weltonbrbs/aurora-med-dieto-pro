@@ -3,7 +3,7 @@ import { Eyebrow } from "./brand";
 const testimonials = [
   {
     quote:
-      "Um material extremamente didático e aplicável na prática clínica. Passei a orientar meus pacientes com muito mais segurança.",
+      "Pelo preço achei que seria básico, mas me surpreendi. O conteúdo é bem organizado e muito mais completo do que eu esperava.",
     name: "Dra. Juliana Ferraz",
     role: "Acupunturista · MG",
   },
