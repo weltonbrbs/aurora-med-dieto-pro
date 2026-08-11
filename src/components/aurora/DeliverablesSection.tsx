@@ -49,7 +49,7 @@ export function DeliverablesSection() {
 
           <div className="flex justify-center">
             <img
-              src={materials}
+              src={materials.url}
               alt="Materiais aurora med"
               loading="lazy"
               width={900}
