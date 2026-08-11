@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     quote:
-      "Conteúdo direto ao ponto e com alto valor clínico. Recomendo para todo profissional integrativo.",
+      "As orientações ficaram muito mais simples de explicar. As receitas ajudam bastante a tornar tudo mais prático para o paciente.",
     name: "Dr. Eduardo Salgado",
     role: "Fisioterapeuta · BA",
   },
