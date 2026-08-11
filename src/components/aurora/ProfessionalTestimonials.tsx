@@ -3,7 +3,7 @@ import { Eyebrow } from "./brand";
 const testimonials = [
   {
     quote:
-      "Pelo preço achei que seria básico, mas me surpreendi. O conteúdo é bem organizado e muito mais completo do que eu esperava.",
+      "Pelo preço achei que seria básico, mas me surpreendi. O conteúdo é bem organizado e muito mais completo do que eu esperava. Os cards são o que mais uso!",
     name: "Dra. Juliana Ferraz",
     role: "Acupunturista · MG",
   },
