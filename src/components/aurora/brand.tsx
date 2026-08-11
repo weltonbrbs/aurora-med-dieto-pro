@@ -1,4 +1,4 @@
-export const CHECKOUT_URL = "https://payt.site/mNCDOgJ";
+export const CHECKOUT_URL = "https://pay.cakto.com.br/erv4w89_1033454";
 
 export function LeafMark({
   className = "h-7 w-7",
