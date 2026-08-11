@@ -3,7 +3,7 @@ import { Eyebrow } from "./brand";
 const testimonials = [
   {
     quote:
-      "Um material extremamente didático e aplicável na prática clínica. Passei a orientar meus pacientes com muito mais segurança.",
+      "Pelo preço achei que seria básico, mas me surpreendi. O conteúdo é bem organizado e muito mais completo do que eu esperava.",
     name: "Dra. Juliana Ferraz",
     role: "Acupunturista · MG",
   },
@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     quote:
-      "Conteúdo direto ao ponto e com alto valor clínico. Recomendo para todo profissional integrativo.",
+      "As orientações ficaram muito mais simples de explicar. As receitas ajudam bastante a tornar tudo mais prático para o paciente.",
     name: "Dr. Eduardo Salgado",
     role: "Fisioterapeuta · BA",
   },
