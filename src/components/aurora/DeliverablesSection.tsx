@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import materials from "@/assets/materials.jpg";
+import materials from "@/assets/materials-novo.png.asset.json";
 
 const items = [
   "E-book completo com tudo que você precisa para saber tratar seus pacientes com Dietoterapia Chinesa",
