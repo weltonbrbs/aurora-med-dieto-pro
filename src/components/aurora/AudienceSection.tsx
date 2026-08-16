@@ -2,14 +2,15 @@ import { Check } from "lucide-react";
 import { CtaButton } from "./brand";
 
 const items = [
-  "Já estudou Medicina Chinesa, mas ainda sente insegurança para orientar pacientes na prática.",
-  "Não sabe quais alimentos indicar para cada síndrome energética.",
-  "Tem dificuldade para transformar teoria em direcionamentos clínicos objetivos.",
-  "Deseja agregar mais valor aos seus atendimentos.",
-  "Quer entregar condutas práticas e personalizadas aos pacientes.",
-  "Busca se destacar como um profissional mais completo.",
-  "Quer aumentar a adesão e os resultados dos seus tratamentos.",
-  "Procura um material de consulta rápida para usar no dia a dia.",
+  "Trabalha com saúde e deseja ampliar seu repertório sobre alimentação, hábitos e longevidade.",
+  "Tem curiosidade sobre o estilo de vida japonês, mas encontra apenas informações superficiais ou fragmentadas.",
+  "Quer compreender o que realmente existe por trás dos hábitos associados à longevidade no Japão.",
+  "Busca referências que possam enriquecer sua atuação profissional.",
+  "Quer conhecer princípios da alimentação japonesa que vão muito além de sushi, peixe e chá-verde.",
+  "Deseja compreender como alimentação, movimento, rotina e vida social se relacionam dentro do modelo japonês.",
+  "Busca conteúdos objetivos, organizados e agradáveis de consultar.",
+  "Quer oferecer uma visão mais ampla sobre hábitos e promoção da saúde dentro de sua atuação profissional.",
+  "Procura diferenciação através de conhecimento pouco explorado por outros profissionais.",
 ];
 
 export function AudienceSection() {
@@ -22,8 +23,8 @@ export function AudienceSection() {
           </h2>
 
           <p className="mt-3 text-base text-white/80">
-            Profissionais que buscam transformar teoria em prática clínica de
-            verdade.
+            Profissionais que não querem limitar seu repertório ao convencional
+            e buscam novas referências sobre saúde e longevidade.
           </p>
         </div>
 
@@ -43,8 +44,7 @@ export function AudienceSection() {
 
         <div className="mt-10 flex justify-center">
           <CtaButton variant="gold" className="max-w-[650px] float-pulse">
-            Quero acessar agora e tratar meus pacientes com Dietoterapia
-            Chinesa
+            Quero ampliar meu repertório
           </CtaButton>
         </div>
       </div>
