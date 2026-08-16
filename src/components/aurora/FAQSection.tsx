@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "Quantas páginas possui?",
-    a: "O Código Japonês da Longevidade possui aproximadamente 60 páginas e foi desenvolvido para oferecer conteúdo relevante sem transformar a experiência em uma leitura excessivamente longa.",
+    a: "O Código Japonês da Longevidade possui mais de 50 páginas de conteúdo, desenvolvido para oferecer conhecimento relevante sem transformar a experiência em uma leitura excessivamente longa.",
   },
   {
     q: "Como recebo?",

@@ -78,8 +78,7 @@ export function ModulesSection() {
         </div>
 
         <p className="mt-8 text-center text-sm text-ink-soft">
-          Aproximadamente 60 páginas · conteúdo objetivo, com alta densidade de
-          conhecimento útil.
+          Conteúdo objetivo, com alta densidade de conhecimento útil.
         </p>
       </div>
     </section>

@@ -3,14 +3,14 @@ import { CtaButton } from "./brand";
 
 const items = [
   "Trabalha com saúde e deseja ampliar seu repertório sobre alimentação, hábitos e longevidade.",
-  "Tem curiosidade sobre o estilo de vida japonês, mas encontra apenas informações superficiais ou fragmentadas.",
+  
   "Quer compreender o que realmente existe por trás dos hábitos associados à longevidade no Japão.",
   "Busca referências que possam enriquecer sua atuação profissional.",
   "Quer conhecer princípios da alimentação japonesa que vão muito além de sushi, peixe e chá-verde.",
   "Deseja compreender como alimentação, movimento, rotina e vida social se relacionam dentro do modelo japonês.",
   "Busca conteúdos objetivos, organizados e agradáveis de consultar.",
   "Quer oferecer uma visão mais ampla sobre hábitos e promoção da saúde dentro de sua atuação profissional.",
-  "Procura diferenciação através de conhecimento pouco explorado por outros profissionais.",
+  "Procura se destacar através de conhecimento pouco explorado por outros profissionais da sua área.",
 ];
 
 export function AudienceSection() {
