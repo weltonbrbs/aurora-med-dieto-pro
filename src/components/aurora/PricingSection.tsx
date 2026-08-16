@@ -9,7 +9,7 @@ const items = [
   },
   {
     label: "Mapa Visual do Modelo Japonês",
-    value: "R$ 37,00",
+    value: "R$ 29,00",
   },
   {
     label: "Guia de 15 Alimentos Japoneses Essenciais",
@@ -63,7 +63,7 @@ export function PricingSection() {
               <span className="font-semibold text-forest">Valor total</span>
 
               <span className="text-lg font-semibold text-ink-soft line-through">
-                R$ 181,00
+                R$ 173,00
               </span>
             </div>
           </div>
