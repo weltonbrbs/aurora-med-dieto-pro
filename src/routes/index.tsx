@@ -67,7 +67,6 @@ function Index() {
       <main className="pb-24 lg:pb-0">
         <HeroSection />
         <AudienceSection />
-        <LearningSection />
         <JapaneseModelSection />
         <ModulesSection />
         <ProfessionalTestimonials />
