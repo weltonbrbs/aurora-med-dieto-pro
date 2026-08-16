@@ -3,13 +3,13 @@ import { Eyebrow } from "./brand";
 const testimonials = [
   {
     quote:
-      "Pelo preço achei que seria básico, mas me surpreendi. O conteúdo é bem organizado e muito mais completo do que eu esperava. Os cards são o que mais uso!",
+      "Pelo preço achei que seria básico, mas me surpreendi. O conteúdo é bem organizado e muito mais completo do que eu esperava. O guia de 15 Alimentos é o que mais uso!",
     name: "Dra. Juliana Ferraz",
-    role: "Acupunturista · MG",
+    role: "Médica · MG",
   },
   {
     quote:
-      "Com o que aprendi com este guia consegui me diferenciar MUITO da concorrência. Os outros nutricionistas da minha região nem imaginam como aprendi tudo o que aplico em minhas consultas.",
+      "Com tudo que aprendi com o Código Japonês consegui me diferenciar MUITO da concorrência. Os outros nutricionistas da minha região nem imaginam como adquiri tudo o que aplico em minhas consultas.",
     name: "Beatriz Nogueira",
     role: "Nutricionista · SC",
   },
