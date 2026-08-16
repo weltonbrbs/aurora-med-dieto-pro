@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { TopUrgencyBar } from "@/components/aurora/TopUrgencyBar";
 import { HeroSection } from "@/components/aurora/HeroSection";
 import { AudienceSection } from "@/components/aurora/AudienceSection";
-import { LearningSection } from "@/components/aurora/LearningSection";
+
 import { ModulesSection } from "@/components/aurora/ModulesSection";
 import { JapaneseModelSection } from "@/components/aurora/JapaneseModelSection";
 import { ProfessionalTestimonials } from "@/components/aurora/ProfessionalTestimonials";

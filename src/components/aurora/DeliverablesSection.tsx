@@ -2,7 +2,7 @@ import { Check } from "lucide-react";
 import pacote from "@/assets/japao-pacote.jpg";
 
 const items = [
-  "Código Japonês da Longevidade — aproximadamente 60 páginas",
+  "Código Japonês da Longevidade — guia completo",
   "Alimentação tradicional japonesa",
   "Hábitos e estilo de vida",
   "Movimento e envelhecimento",
