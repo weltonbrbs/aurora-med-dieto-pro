@@ -68,11 +68,11 @@ function Index() {
         <HeroSection />
         <AudienceSection />
         <LearningSection />
-        <ModulesSection />
         <JapaneseModelSection />
+        <ModulesSection />
+        <ProfessionalTestimonials />
         <BonusSection />
         <PricingSection />
-        <ProfessionalTestimonials />
         <DeliverablesSection />
         <GuaranteeSection />
         <FAQSection />
