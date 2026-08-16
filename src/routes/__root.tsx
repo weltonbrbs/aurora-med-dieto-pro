@@ -77,11 +77,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Dietoterapia Chinesa para Profissionais | aurora med" },
+      { title: "Código Japonês da Longevidade | Aurora Med" },
       {
         name: "description",
         content:
-          "Materiais clínicos de saúde integrativa da aurora med: didáticos, organizados e prontos para aplicar no atendimento.",
+          "Materiais profissionais de saúde da aurora med: claros, organizados e agradáveis de consultar.",
       },
       { name: "author", content: "aurora med" },
       { property: "og:site_name", content: "aurora med" },

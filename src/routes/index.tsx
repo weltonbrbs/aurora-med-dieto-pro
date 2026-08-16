@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/aurora/HeroSection";
 import { AudienceSection } from "@/components/aurora/AudienceSection";
 import { LearningSection } from "@/components/aurora/LearningSection";
 import { ModulesSection } from "@/components/aurora/ModulesSection";
+import { JapaneseModelSection } from "@/components/aurora/JapaneseModelSection";
 import { ProfessionalTestimonials } from "@/components/aurora/ProfessionalTestimonials";
 
 import { BonusSection } from "@/components/aurora/BonusSection";
@@ -16,9 +17,13 @@ import { FinalCTA } from "@/components/aurora/FinalCTA";
 import { Footer } from "@/components/aurora/Footer";
 import { MobileStickyCTA } from "@/components/aurora/MobileStickyCTA";
 
-const title = "Dietoterapia Chinesa para Profissionais | aurora med";
+const title = "Código Japonês da Longevidade | Aurora Med";
 const description =
-  "Guia prático de Dietoterapia Chinesa: indique alimentos conforme o diagnóstico energético, aplique os Cinco Movimentos e potencialize os resultados dos seus pacientes.";
+  "Conheça princípios de alimentação, hábitos e saúde do Japão em um guia objetivo desenvolvido para ampliar o repertório de profissionais da saúde.";
+const ogTitle = "Código Japonês da Longevidade";
+const ogDescription =
+  "Alimentação, hábitos e princípios de saúde do Japão organizados em um guia profissional, objetivo e visual.";
+const url = "https://auroramed.aurorarecursosdigitais.com.br/";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -26,22 +31,22 @@ export const Route = createFileRoute("/")({
     meta: [
       { title },
       { name: "description", content: description },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
+      { property: "og:title", content: ogTitle },
+      { property: "og:description", content: ogDescription },
       { property: "og:type", content: "product" },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: url },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: url }],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Product",
-          name: "Dietoterapia Chinesa — aurora med",
+          name: "Código Japonês da Longevidade — aurora med",
           brand: { "@type": "Brand", name: "aurora med" },
-          description,
+          description: ogDescription,
           offers: {
             "@type": "Offer",
             price: "47.90",
@@ -63,9 +68,9 @@ function Index() {
         <HeroSection />
         <AudienceSection />
         <LearningSection />
+        <JapaneseModelSection />
         <ModulesSection />
         <ProfessionalTestimonials />
-        
         <BonusSection />
         <PricingSection />
         <DeliverablesSection />

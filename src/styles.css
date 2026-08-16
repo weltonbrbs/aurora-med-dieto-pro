@@ -166,23 +166,23 @@
 }
 
 :root {
-  --forest: oklch(0.3253 0.0588 155.65);
-  --forest-deep: oklch(0.2627 0.0438 157.13);
-  --forest-hover: oklch(0.4304 0.082 155.55);
-  --sage: oklch(0.6264 0.049 134.12);
-  --mint: oklch(0.9449 0.0119 145.48);
-  --cream: oklch(0.965 0.0114 84.58);
+  --forest: oklch(0.2947 0.0104 264.5);
+  --forest-deep: oklch(0.2049 0.0079 264.5);
+  --forest-hover: oklch(0.3803 0.0122 264.5);
+  --sage: oklch(0.5804 0.0092 264.5);
+  --mint: oklch(0.9298 0.0035 84.5);
+  --cream: oklch(0.9702 0.0058 84.5);
   --gold: oklch(0.82 0.14 85.5);
   --gold-deep: oklch(0.72 0.16 80.5);
-  --element-wood: oklch(0.5401 0.1091 148.2);
-  --element-fire: oklch(0.5589 0.1741 27.5);
-  --element-earth: oklch(0.6602 0.0947 76.5);
-  --element-metal: oklch(0.6206 0.0163 250.2);
-  --element-water: oklch(0.4362 0.0946 250.8);
-  --terracotta: oklch(0.6014 0.1127 38.91);
+  --element-wood: oklch(0.5401 0.2 27.2);
+  --element-fire: oklch(0.6 0.17 27.2);
+  --element-earth: oklch(0.4 0.0104 264.5);
+  --element-metal: oklch(0.5804 0.0092 264.5);
+  --element-water: oklch(0.2947 0.0104 264.5);
+  --terracotta: oklch(0.5303 0.2005 27.2);
   --strike: oklch(0.58 0.23 27.2);
-  --ink: oklch(0.2557 0.0137 154.26);
-  --ink-soft: oklch(0.483 0.0161 145.32);
+  --ink: oklch(0.2401 0.0086 264.5);
+  --ink-soft: oklch(0.4801 0.0104 264.5);
 
   --background: oklch(1 0 0);
   --foreground: oklch(0.2557 0.0137 154.26);

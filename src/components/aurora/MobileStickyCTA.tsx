@@ -10,7 +10,7 @@ export function MobileStickyCTA() {
           rel="noopener noreferrer"
           className="block w-full rounded-full bg-gold px-5 py-3.5 text-center text-sm font-semibold text-forest-deep transition-all duration-200 ease-out hover:bg-gold-deep hover:scale-[1.03] hover:-translate-y-0.5 hover:shadow-[0_16px_32px_-10px_rgba(197,166,111,0.55)]"
         >
-          Eu quero meu acesso agora!
+          Quero meu acesso
         </a>
       </div>
     </div>

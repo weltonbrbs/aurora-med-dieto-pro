@@ -22,9 +22,7 @@ export function GuaranteeSection() {
 
         <div className="text-center md:text-left">
 
-          <Eyebrow>
-            Garantia incondicional
-          </Eyebrow>
+          <Eyebrow>Garantia incondicional</Eyebrow>
 
 
           <h2 className="mt-3 text-3xl font-semibold leading-tight text-forest sm:text-[2.4rem]">
@@ -33,16 +31,15 @@ export function GuaranteeSection() {
 
 
           <p className="mt-4 text-sm leading-[1.75] text-ink-soft sm:text-base">
-            Você pode acessar todo o material, analisar o conteúdo e aplicar
-            na sua prática. Caso perceba que a Dietoterapia Chinesa não é o
-            que você esperava, basta solicitar o reembolso dentro do prazo de
-            7 dias e devolveremos 100% do seu investimento.
+            Você poderá acessar o Código Japonês da Longevidade e seus
+            materiais complementares com tranquilidade. Caso perceba que o
+            conteúdo não corresponde ao que esperava, poderá solicitar o
+            reembolso dentro do prazo de 7 dias.
           </p>
 
           <p className="mt-4 text-sm leading-[1.75] text-ink-soft sm:text-base">
-            Você não assume nenhum risco. O objetivo é que você tenha
-            segurança para conhecer o método e decidir se ele faz sentido para
-            sua prática profissional.
+            Você conhece o material primeiro e decide depois se ele merece
+            permanecer na sua biblioteca profissional.
           </p>
 
         </div>

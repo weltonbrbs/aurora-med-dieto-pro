@@ -6,19 +6,20 @@ export function FinalCTA() {
       <div className="mx-auto max-w-[820px] px-5 py-14 text-center md:px-6 md:py-16">
 
         <h2 className="text-3xl font-semibold leading-tight text-white sm:text-[2.6rem]">
-          Comece hoje a usar a Dietoterapia Chinesa na sua clínica
+          Conheça uma nova perspectiva sobre saúde e longevidade
         </h2>
 
 
         <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-white/75 sm:text-base">
-          Tenha acesso imediato ao material completo, aos bônus exclusivos e
-          transforme seu atendimento com mais segurança.
+          Explore princípios de alimentação, movimento, rotina e estilo de vida
+          encontrados no contexto japonês — organizados em um material
+          desenvolvido para ampliar seu repertório profissional.
         </p>
 
 
         <div className="mt-7 flex justify-center">
           <CtaButton variant="gold">
-            Eu quero meu acesso agora!
+            Quero acessar o Código Japonês
           </CtaButton>
         </div>
 

@@ -1,23 +1,43 @@
 const modules = [
   {
-    title: "Fundamentos da Dietoterapia Chinesa",
-    text: "Entenda os princípios que regem a ação terapêutica dos alimentos.",
+    title: "Japão e o fenômeno da longevidade",
+    text: "Contextualização do país e dos fatores relacionados ao envelhecimento da população.",
   },
   {
-    title: "Cinco Movimentos, Sabores e Natureza Térmica",
-    text: "Aprenda a classificar e selecionar alimentos com lógica clínica.",
+    title: "O padrão alimentar japonês",
+    text: "Estrutura das refeições, variedade, ingredientes e princípios alimentares.",
   },
   {
-    title: "Diagnóstico Energético e Orientação Dietética",
-    text: "Veja como transformar o diagnóstico em direcionamentos alimentares objetivos.",
+    title: "Alimentos que ajudam a compreender o modelo",
+    text: "Peixes, algas, soja, fermentados, vegetais, chá e outros alimentos relevantes.",
   },
   {
-    title: "Receitas Terapêuticas e Casos Clínicos",
-    text: "Protocolos prontos para uso imediato na clínica.",
+    title: "Hara Hachi Bu",
+    text: "Saciedade, pequenas porções e comportamento alimentar.",
   },
   {
-    title: "Planejamento e Orientações ao Paciente",
-    text: "Modelos práticos para aumentar adesão e resultados.",
+    title: "Movimento incorporado à rotina",
+    text: "Caminhada, deslocamentos, independência funcional e atividade cotidiana.",
+  },
+  {
+    title: "Ikigai, propósito e envelhecimento",
+    text: "A relação entre propósito, rotina e continuidade das atividades ao longo da vida.",
+  },
+  {
+    title: "Comunidade e conexão social",
+    text: "Convívio, suporte social, pertencimento e participação comunitária.",
+  },
+  {
+    title: "Ambiente e estilo de vida",
+    text: "Como diferentes comportamentos se combinam em um sistema mais amplo.",
+  },
+  {
+    title: "Japão tradicional versus Japão moderno",
+    text: "Transformações recentes e os limites de uma visão romantizada sobre longevidade japonesa.",
+  },
+  {
+    title: "Aplicação ao repertório profissional",
+    text: "Como organizar esses conhecimentos e utilizá-los como referências dentro da atuação profissional.",
   },
 ];
 
@@ -28,6 +48,11 @@ export function ModulesSection() {
         <h2 className="text-center text-3xl font-semibold leading-tight text-forest sm:text-[2.5rem]">
           Conteúdo por dentro do guia
         </h2>
+
+        <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-ink-soft sm:text-base">
+          Um caminho objetivo para compreender o modelo japonês sem transformar
+          o material em uma enciclopédia.
+        </p>
 
         <div className="mt-10 border-t border-sage/30">
           {modules.map((module, index) => (
@@ -51,6 +76,11 @@ export function ModulesSection() {
             </article>
           ))}
         </div>
+
+        <p className="mt-8 text-center text-sm text-ink-soft">
+          Aproximadamente 60 páginas · conteúdo objetivo, com alta densidade de
+          conhecimento útil.
+        </p>
       </div>
     </section>
   );
