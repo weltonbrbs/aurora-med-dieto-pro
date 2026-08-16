@@ -14,35 +14,29 @@ export function AboutAuroraMed() {
 
 
         <h2 className="mt-4 text-3xl font-semibold leading-tight text-forest sm:text-[2.5rem]">
-          Conteúdo clínico transformado em materiais práticos e aplicáveis
+          Conhecimento em saúde transformado em materiais claros e aplicáveis
         </h2>
 
 
         <div className="mx-auto mt-6 max-w-[700px] space-y-4 text-sm leading-[1.75] text-ink-soft sm:text-base">
 
           <p>
-            A aurora med nasceu com o propósito de transformar conhecimentos
-            complexos da saúde integrativa em materiais claros, organizados e
-            fáceis de aplicar.
+            A aurora med nasceu para transformar temas relevantes da saúde em
+            materiais claros, organizados e agradáveis de consultar.
           </p>
 
 
           <p>
-            Criamos conteúdos pensados para profissionais que desejam
-            aprofundar sua prática clínica e oferecer orientações mais
-            completas aos seus pacientes.
+            Criamos conteúdos para profissionais e estudantes que desejam
+            ampliar seu repertório, conhecer novas perspectivas e continuar
+            evoluindo em sua área.
           </p>
 
 
           <p>
-            Nosso objetivo é unir conhecimento técnico, didática e aplicação
-            prática para que você tenha mais segurança no atendimento.
-          </p>
-
-
-          <p>
-            Mais do que informação, entregamos ferramentas para ajudar você a
-            evoluir profissionalmente.
+            Nosso objetivo é unir conhecimento, didática e organização visual
+            em materiais que realmente mereçam ocupar espaço na sua biblioteca
+            digital.
           </p>
 
         </div>
