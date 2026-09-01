@@ -10,14 +10,14 @@ const testimonials = [
   {
     quote:
       "Com tudo que aprendi com o Código Japonês consegui me diferenciar MUITO da concorrência. Os outros nutricionistas da minha região nem imaginam como adquiri tudo o que aplico em minhas consultas.",
-    name: "Beatriz Nogueira",
-    role: "Nutricionista · SC",
+name: "Beatriz Nogueira",
+    role: "Fisioterapeuta · SC",
   },
   {
     quote:
       "As orientações ficaram muito mais simples de explicar. As receitas ajudam bastante a tornar tudo mais prático para o paciente.",
-    name: "Dr. Eduardo Salgado",
-    role: "Fisioterapeuta · BA",
+name: "Eduardo Salgado",
+    role: "Nutricionista · BA",
   },
 ];
 
