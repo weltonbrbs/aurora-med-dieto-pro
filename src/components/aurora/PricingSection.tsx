@@ -1,5 +1,5 @@
 import { Lock } from "lucide-react";
-import pacote from "@/assets/japao-pacote.jpg";
+import pacote from "@/assets/mockup-completo.png.asset.json";
 import { CtaButton, Eyebrow } from "./brand";
 
 const items = [
@@ -34,7 +34,7 @@ export function PricingSection() {
         </p>
 
         <img
-          src={pacote}
+          src={pacote.url}
           alt="Código Japonês da Longevidade, Mapa Visual e Guia de 15 Alimentos Japoneses"
           loading="lazy"
           width={1200}

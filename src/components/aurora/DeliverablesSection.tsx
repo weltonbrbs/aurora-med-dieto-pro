@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import pacote from "@/assets/japao-pacote.jpg";
+import pacote from "@/assets/mockup-completo.png.asset.json";
 
 const items = [
   "Código Japonês da Longevidade — guia completo",
@@ -46,7 +46,7 @@ export function DeliverablesSection() {
 
           <div className="flex justify-center">
             <img
-              src={pacote}
+              src={pacote.url}
               alt="Materiais do Código Japonês da Longevidade — aurora med"
               loading="lazy"
               width={1200}

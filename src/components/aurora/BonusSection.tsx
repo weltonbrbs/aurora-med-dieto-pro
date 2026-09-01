@@ -1,5 +1,5 @@
-import bonusMapa from "@/assets/japao-bonus-mapa.jpg";
-import bonusAlimentos from "@/assets/japao-bonus-alimentos.jpg";
+import bonusMapa from "@/assets/mockup-mapa.png.asset.json";
+import bonusAlimentos from "@/assets/mockup-alimentos.png.asset.json";
 
 import { Eyebrow } from "./brand";
 
@@ -11,7 +11,7 @@ const bonuses = [
     text: "Uma visão panorâmica dos principais pilares apresentados no Código Japonês da Longevidade, organizada visualmente para facilitar compreensão, revisão e consulta rápida.",
     highlight: "Veja o modelo completo em uma única visão.",
     price: "Valor individual: R$ 37,00",
-    img: bonusMapa,
+    img: bonusMapa.url,
     alt: "Mapa visual do modelo japonês de longevidade",
   },
   {
@@ -21,7 +21,7 @@ const bonuses = [
     text: "Conheça 15 alimentos presentes na cultura alimentar japonesa que vão além dos ingredientes mais conhecidos no Ocidente, entendendo seu contexto, características e formas tradicionais de consumo.",
     highlight: "Amplie seu repertório além do sushi, salmão e chá-verde.",
     price: "Valor individual: R$ 47,00",
-    img: bonusAlimentos,
+    img: bonusAlimentos.url,
     alt: "Guia de 15 alimentos japoneses essenciais",
   },
 ];
