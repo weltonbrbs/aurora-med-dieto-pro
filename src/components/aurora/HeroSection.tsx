@@ -5,7 +5,7 @@ import {
   Zap,
 } from "lucide-react";
 
-import heroMockup from "@/assets/japao-hero-mockup.jpg";
+import heroMockup from "@/assets/mockup-produto.png.asset.json";
 import { CtaButton, Eyebrow, Logo } from "./brand";
 
 const micro = [
@@ -62,7 +62,7 @@ export function HeroSection() {
 
         <div className="flex justify-center lg:justify-end">
           <img
-            src={heroMockup}
+            src={heroMockup.url}
             alt="Guia Código Japonês da Longevidade — aurora med"
             width={1200}
             height={1200}
