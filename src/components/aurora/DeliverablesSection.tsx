@@ -4,10 +4,6 @@ import pacote from "@/assets/mockup-completo.png.asset.json";
 const items = [
   "Código Japonês da Longevidade — guia completo",
   "Alimentação tradicional japonesa",
-  "Hábitos e estilo de vida",
-  "Movimento e envelhecimento",
-  "Propósito e rotina",
-  "Conexão social",
   "Mapa Visual do Modelo Japonês",
   "Guia de 15 Alimentos Japoneses Essenciais",
   "Materiais digitais com acesso vitalício",
