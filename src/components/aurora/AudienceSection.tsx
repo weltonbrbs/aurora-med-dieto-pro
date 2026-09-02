@@ -43,7 +43,7 @@ export function AudienceSection() {
         </ul>
 
         <div className="mt-10 flex justify-center">
-          <CtaButton variant="gold" className="max-w-[650px] float-pulse">
+<CtaButton variant="gold" pulse className="max-w-[650px]">
             Quero ampliar meu repertório
           </CtaButton>
         </div>

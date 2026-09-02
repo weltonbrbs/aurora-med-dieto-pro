@@ -46,7 +46,7 @@ export function HeroSection() {
           </p>
 
           <div className="mt-7">
-            <CtaButton variant="gold" className="w-full sm:w-auto">
+<CtaButton variant="gold" pulse className="w-full sm:w-auto">
               Quero conhecer o Código Japonês
             </CtaButton>
           </div>

@@ -69,27 +69,36 @@ export function CtaButton({
   className = "",
   full = false,
   variant = "forest",
+  pulse = false,
 }: {
   children: React.ReactNode;
   className?: string;
   full?: boolean;
   variant?: "forest" | "gold";
+  pulse?: boolean;
 }) {
-  const tone =
-    variant === "gold"
-      ? "bg-gold text-forest-deep hover:bg-gold-deep hover:-translate-y-1 hover:shadow-[0_16px_32px_-10px_rgba(197,166,111,0.55)] hover:scale-[1.03]"
-      : "bg-forest text-white hover:bg-forest-hover";
+  const gold = variant === "gold";
+
+  const tone = gold
+    ? "bg-gold text-forest-deep hover:bg-gold-deep hover:shadow-[0_16px_32px_-10px_rgba(197,166,111,0.55)] hover:scale-[1.03]"
+    : "bg-forest text-white hover:bg-forest-hover";
+
+  const rise = pulse
+    ? "hover:-translate-y-2.5 active:-translate-y-2"
+    : gold
+      ? "hover:-translate-y-1"
+      : "";
 
   return (
     <a
       href={CHECKOUT_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-flex min-h-[52px] items-center justify-center rounded-lg px-7 py-3.5 text-center text-sm font-semibold leading-snug transition-all duration-200 ease-out sm:text-base ${tone} ${
+      className={`inline-flex min-h-[52px] items-center justify-center rounded-lg px-7 py-3.5 text-center text-sm font-semibold leading-snug transition-all duration-200 ease-out sm:text-base ${tone} ${rise} ${
         full ? "w-full" : ""
       } ${className}`}
     >
-      {children}
+      {pulse ? <span className="float-pulse block">{children}</span> : children}
     </a>
   );
 }
