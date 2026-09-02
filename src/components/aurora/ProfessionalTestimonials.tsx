@@ -3,13 +3,13 @@ import { Eyebrow } from "./brand";
 const testimonials = [
   {
     quote:
-      "Pelo preço achei que seria básico, mas me surpreendi. O conteúdo é bem organizado e muito mais completo do que eu esperava. O guia de 15 Alimentos é o que mais uso!",
+      "Pelo preço achei que seria básico, mas me surpreendi. O conteúdo é bem organizado e muito mais completo do que eu esperava. O guia de 15 alimentos é o que mais uso!",
     name: "Dra. Juliana Ferraz",
     role: "Médica · MG",
   },
   {
     quote:
-      "Com tudo que aprendi com o Código Japonês consegui me diferenciar MUITO da concorrência. Os outros nutricionistas da minha região nem imaginam como adquiri tudo o que aplico em minhas consultas.",
+      "Com tudo que aprendi com o Código Japonês consegui me diferenciar MUITO dos meus concorrentes. Os outros fisioterapeutas da minha região nem imaginam como descobri tudo que aplico em minhas consultas.",
 name: "Beatriz Nogueira",
     role: "Fisioterapeuta · SC",
   },
@@ -32,9 +32,9 @@ export function ProfessionalTestimonials() {
             O que dizem os profissionais que já aplicam
           </h2>
 
-          <p className="mt-3 text-base text-ink-soft">
-            Centenas de profissionais da saúde já transformaram seus
-            atendimentos com a Dietoterapia Chinesa.
+            <p className="mt-3 text-base text-ink-soft">
+              Centenas de profissionais da saúde já transformaram seus
+              atendimentos com o Código Japonês da Longevidade!
           </p>
         </div>
 
