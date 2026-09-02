@@ -52,7 +52,7 @@ export const Route = createFileRoute("/")({
             price: "47.90",
             priceCurrency: "BRL",
             availability: "https://schema.org/InStock",
-            url: "https://pay.cakto.com.br/erv4w89_1033454",
+            url: "https://pay.wiapy.com/k1wHZ6S8ETT6",
           },
         }),
       },
