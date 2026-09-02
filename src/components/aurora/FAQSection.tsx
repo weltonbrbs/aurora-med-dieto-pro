@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "O acesso expira?",
-    a: "Não. O acesso ao material adquirido é vitalício - acesse sempre que quiser.",
+    a: "Não. O acesso ao material adquirido é vitalício - consulte sempre que quiser.",
   },
   {
     q: "Posso acessar pelo celular?",
