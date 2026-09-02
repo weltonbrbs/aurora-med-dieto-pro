@@ -80,7 +80,7 @@ export function PricingSection() {
             <p className="mt-3 text-sm text-terracotta">ou 12x de R$ 4,96</p>
 
             <div className="mt-7">
-              <CtaButton full variant="gold">
+<CtaButton full variant="gold" pulse>
                 Quero o Código Japonês da Longevidade
               </CtaButton>
             </div>
