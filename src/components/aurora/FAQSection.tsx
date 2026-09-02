@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "E se eu não gostar?",
-    a: "Existe uma garantia de 7 dias conforme as condições apresentadas na oferta.",
+    a: "Existe uma garantia incondicional de 7 dias - se não gostar do nosso material, devolvemos 100% do seu dinheiro.",
   },
 ];
 
