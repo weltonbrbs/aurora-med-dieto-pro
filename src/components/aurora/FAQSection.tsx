@@ -4,7 +4,7 @@ import { ChevronDown } from "lucide-react";
 const faqs = [
   {
     q: "Para quem é o Código Japonês da Longevidade?",
-    a: "O material foi desenvolvido principalmente para profissionais e estudantes da área da saúde interessados em alimentação, hábitos, envelhecimento saudável e longevidade.",
+    a: "O material foi desenvolvido principalmente para profissionais e estudantes da área da saúde interessados em alimentação, hábitos e envelhecimento saudável, e que desejam aumentar a sua autoridade através desses conhecimentos.",
   },
   {
     q: "Preciso ser nutricionista?",
