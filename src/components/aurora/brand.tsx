@@ -89,16 +89,33 @@ export function CtaButton({
       ? "hover:-translate-y-1"
       : "";
 
+  const size = full ? "w-full" : "";
+
+  const base = `inline-flex min-h-[52px] items-center justify-center rounded-lg px-7 py-3.5 text-center text-sm font-semibold leading-snug transition-all duration-200 ease-out sm:text-base ${tone} ${rise}`;
+
+  if (pulse) {
+    return (
+      <span className={`float-pulse inline-flex ${size} ${className}`}>
+        <a
+          href={CHECKOUT_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${base} w-full`}
+        >
+          {children}
+        </a>
+      </span>
+    );
+  }
+
   return (
     <a
       href={CHECKOUT_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-flex min-h-[52px] items-center justify-center rounded-lg px-7 py-3.5 text-center text-sm font-semibold leading-snug transition-all duration-200 ease-out sm:text-base ${tone} ${rise} ${
-        full ? "w-full" : ""
-      } ${className}`}
+      className={`${base} ${size} ${className}`}
     >
-      {pulse ? <span className="float-pulse block">{children}</span> : children}
+      {children}
     </a>
   );
 }
