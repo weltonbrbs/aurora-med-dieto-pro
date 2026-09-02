@@ -41,7 +41,8 @@ export function HeroSection() {
             Descubra como alimentação, movimento, rotina, comportamento e
             conexão social se combinam no estilo de vida japonês — organizados
             em um material objetivo para profissionais que desejam ampliar sua
-            visão sobre saúde e longevidade.
+            visão sobre saúde e longevidade - e dobrar o seu faturamento com
+            isso.
           </p>
 
           <div className="mt-7">

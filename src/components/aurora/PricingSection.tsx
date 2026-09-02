@@ -70,7 +70,7 @@ export function PricingSection() {
 
           <div className="mt-8 border-t border-sage/25 pt-8 text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-soft">
-              Hoje por apenas
+              HOJE VOCÊ ADQUIRE POR APENAS
             </p>
 
             <div className="mt-2 text-[4rem] font-bold leading-none tracking-[-0.05em] text-forest sm:text-[5rem]">

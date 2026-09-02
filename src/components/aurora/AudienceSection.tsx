@@ -5,7 +5,7 @@ const items = [
   "Trabalha com saúde e deseja ampliar seu repertório sobre alimentação, hábitos e longevidade.",
   
   "Quer compreender o que realmente existe por trás dos hábitos associados à longevidade no Japão.",
-  "Busca referências que possam enriquecer sua atuação profissional.",
+  "Busca referências que possam enriquecer sua atuação profissional, diferenciando-se da concorrência.",
   "Quer conhecer princípios da alimentação japonesa que vão muito além de sushi, peixe e chá-verde.",
   "Deseja compreender como alimentação, movimento, rotina e vida social se relacionam dentro do modelo japonês.",
   "Busca conteúdos objetivos, organizados e agradáveis de consultar.",
