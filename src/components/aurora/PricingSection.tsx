@@ -77,7 +77,7 @@ export function PricingSection() {
               R$ 47,90
             </div>
 
-            <p className="mt-3 text-sm text-terracotta">ou 12x de R$ 4,96</p>
+            <p className="mt-3 text-sm text-terracotta">ou 12x de R$ 5,68</p>
 
             <div className="mt-7">
 <CtaButton full variant="gold" pulse>
